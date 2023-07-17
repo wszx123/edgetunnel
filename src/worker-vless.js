@@ -4,10 +4,15 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
+let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';//更换UUID
 
 let proxyIP = '';
-
+//3Kmfi6HP大佬代码中的5个CDN加速,从下面5个中任选一个填写到上面的引号中
+//cdn-all.xn--b6gac.eu.org【中国 阿里云】
+//cdn.xn--b6gac.eu.org【中国 阿里云】
+//cdn-b100.xn--b6gac.eu.org【中国 阿里云】
+//edgetunnel.anycast.eu.org【美国 纽约美联社】
+//cdn.anycast.eu.org（演示用的这个）【香港 阿里云】
 
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
