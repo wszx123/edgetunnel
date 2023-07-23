@@ -13,7 +13,7 @@ let proxyIP = '';
 //cdn-b100.xn--b6gac.eu.org【中国 阿里云】
 //edgetunnel.anycast.eu.org【美国 纽约美联社】
 //cdn.anycast.eu.org（演示用的这个）【香港 阿里云】
-
+//可以填写自己优选出来的ip,一个填写在这，另一个替换科学工具中的域名地址，可以基本固定ip地区
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
 }
